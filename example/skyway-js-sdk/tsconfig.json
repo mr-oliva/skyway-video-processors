@@ -2,7 +2,7 @@
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "noImplicitAny": true,
-    "module": "es6",
+    "module": "NodeNext",
     "target": "es5",
     "allowJs": true,
     "paths": {
@@ -10,7 +10,8 @@
         "../../src/index.ts"
       ]
     },
-    "moduleResolution": "nodenext"
+    "moduleResolution": "nodenext",
+    "strict": true,
   },
   "files": [
     "src/index.ts"

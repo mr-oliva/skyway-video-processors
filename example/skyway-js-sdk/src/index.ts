@@ -97,6 +97,7 @@ const token = new SkyWayAuthToken({
         video.release();
     });
 
+    if (!joinButton) return;
     joinButton.onclick = async () => {
         if (roomNameInput.value === '') return;
 
@@ -112,7 +113,7 @@ const token = new SkyWayAuthToken({
         });
         const me = await room.join();
 
-        myId.textContent = me.id;
+        if (myId != null) myId.textContent = me.id;
 
         publication = await me.publish(video);
 
